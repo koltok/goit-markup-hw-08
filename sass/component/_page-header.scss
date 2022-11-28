@@ -1,0 +1,168 @@
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo__studio {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 2px solid red;
+}
+
+.container__header {
+    display: flex;
+    align-items: baseline;
+}
+
+.contact {
+    display: flex;
+    margin-left: auto;
+    align-items: baseline;
+}
+
+.mail-icon {
+    margin-right: 10px;
+}
+
+.mail__item {
+    margin-right: 30px;
+}
+
+.tel-icon {
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__logo {
+    margin-right: 93px;
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.menu__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    color: $fontColor;
+    display: block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:active {
+        color: $accentColor;
+    }
+}
+
+.current {
+    color: $accentColor;
+    position: relative;
+}
+
+.current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: $accentColor;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.contact__mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      color: #2196F3;
+    }
+}
+
+.contact__tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      color: #2196F3;
+    }
+}
+
+.mail__icon {
+    fill: currentColor;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+       fill: #2196F3;
+    }
+}
+
+.tel__icon {
+    fill: currentColor;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+       fill: #2196F3;
+    }
+}
+
+
