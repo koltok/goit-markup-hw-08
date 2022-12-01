@@ -466,6 +466,21 @@ height: 400px;
 background-size:cover;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) 
+{.banner {background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4)),
+  url(../images/header-img-mob2.jpg);
+  background-repeat: no-repeat;
+ background-position: center;
+ max-width: 100%;
+ margin: 0 auto;
+ height: 400px;
+ background-size:cover;
+}
+}
+
 .banner__title {
   font-family: 'Roboto';
 font-style: normal;
@@ -480,6 +495,7 @@ color: #FFFFFF;
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
 
 .banner__btn {
   font-family: 'Roboto';
@@ -511,16 +527,26 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 color: #FFFFFF;}
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) 
+{
   .banner {
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
 rgba(47, 48, 58, 0.4)),
- url(../images/banner_img-tab.jpg);
-  }
-}
+ url(../images/banner_img-tab.jpg);}
 
-@media screen and (min-width: 1200px) {
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) 
+{.banner {background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4)),
+  url(../images/header-img-tab2.jpg);
+  }
+}}
+
+
+@media screen and (min-width: 1200px) 
+{
   .banner{
     max-width: 1600px;
     height: 600px;
@@ -529,14 +555,15 @@ rgba(47, 48, 58, 0.4)),
  url(../images/img_bg.jpg);
   }
 
-.banner__title{
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  max-width: 696px;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) 
+{.banner {background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4)),
+  url(../images/header-img-desk2.jpg);
 }
 }
-
+}
 
 /*------------------------------HERO---------------------------------*/
 
