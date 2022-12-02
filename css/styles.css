@@ -961,8 +961,7 @@ color: #2196F3;
 }
 
 .footer-item:not(:last-child) {
-margin-bottom: 9px;  
-}
+margin-bottom: 9px;  }
 
 .footer-item {
 width: 100%;
@@ -1022,10 +1021,12 @@ justify-content: center;}
 
 .input-btn-form {
   display: flex;
+  gap: 12px;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   flex-wrap: wrap;
-justify-content: center;
-}
+  }
 
 .footer-info {
 /*margin-right: 70px;*/
@@ -1057,14 +1058,6 @@ margin-bottom: 60px;
         margin-left:;
         display: flex;
         flex-wrap: wrap;
-      }
-  
-      .input-btn-form {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
       }
   
       .buttom-subs {
@@ -1341,8 +1334,10 @@ margin-bottom: 60px;
     
 }
 
-.footer-container {  
-
+.footer-container { 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
 }
 
 .footer-logo {
@@ -1376,13 +1371,20 @@ margin-bottom: 60px;
     margin-bottom: 9px;
 }
 
+.footer-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  }
+
 .footer-soc {
     display: block;
 }
 
 .footer-soc-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
 }
 
@@ -1401,15 +1403,19 @@ margin-bottom: 60px;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-}
+    display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  }
+
 
 .container-flex {
     display: flex;
-    align-items: center;
+    align-items:baseline
   justify-content: center;
   flex-wrap: nowrap;
+  gap: 54px;
 }
-
 
 .footer-info {
   /*margin-right: 70px;*/
@@ -1431,10 +1437,12 @@ margin-bottom: 60px;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    width: 100%;
+   width: 1005;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-right: 15px;
+    padding-left: 15px;
     }
     
     .form-subs {
@@ -1447,7 +1455,7 @@ margin-bottom: 60px;
         display: flex;
         gap: 12px;
         align-items: center;
-        text-align: center;
+        justify-content: flex-start;
         }
     
         .buttom-subs {
